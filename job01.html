@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>悟宝孙 · 个人主页</title>
+  <style>
+    :root {
+      --theme: #8b4513;  /* 褐金主色 */
+      --accent: #ffd700; /* 黄金点缀 */
+      --bg: #fffaf5;     /* 奶白背景 */
+      --text: #333;
+      --radius: 8px;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    a {
+      color: var(--theme);
+      text-decoration: none;
+    }
+    a:hover {
+      color: var(--accent);
+    }
+    header {
+      background: var(--theme);
+      color: #fff;
+      padding: 30px 20px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.2em;
+      letter-spacing: 2px;
+    }
+    header p {
+      margin-top: 6px;
+      font-size: 1.1em;
+      opacity: .9;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      display: flex;
+      gap: 30px;
+      padding: 0 20px;
+    }
+    aside {
+      flex: 0 0 260px;
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+      padding: 25px;
+      text-align: center;
+    }
+    aside img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid var(--accent);
+      margin-bottom: 15px;
+    }
+    aside h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: var(--theme);
+    }
+    aside .contact {
+      text-align: left;
+      margin-top: 15px;
+      font-size: .95em;
+    }
+    aside .contact p {
+      margin: 6px 0;
+    }
+    main {
+      flex: 1;
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+      padding: 30px 35px;
+    }
+    section {
+      margin-bottom: 35px;
+    }
+    section h3 {
+      font-size: 1.3em;
+      margin-bottom: 12px;
+      color: var(--theme);
+      border-left: 4px solid var(--accent);
+      padding-left: 10px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    ul li {
+      margin: 6px 0;
+    }
+    .timeline .item {
+      margin: 10px 0;
+      padding-left: 20px;
+      border-left: 3px solid var(--accent);
+      position: relative;
+    }
+    .timeline .item::before {
+      content: "";
+      position: absolute;
+      left: -7px;
+      top: 8px;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: var(--theme);
+      border: 2px solid var(--accent);
+    }
+    .timeline strong {
+      color: var(--theme);
+      margin-right: 8px;
+    }
+    footer {
+      text-align: center;
+      font-size: .85em;
+      color: #999;
+      padding: 25px 0 40px;
+    }
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+      }
+      aside {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        text-align: left;
+      }
+      aside img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>悟宝孙</h1>
+    <p>不忘初心，砥砺前行</p>
+  </header>
+
+  <div class="container">
+    <aside>
+      <img src="D:\宣传工作\机甲.png" alt="个人照片">
+      <h2>悟宝孙</h2>
+      <div class="contact">
+        <p><strong>电话：</strong><a href="tel:686666">686666</a></p>
+        <p><strong>地址：</strong>银河系 · 地球</p>
+      </div>
+    </aside>
+
+    <main>
+      <section>
+        <h3>教育背景</h3>
+        <ul>
+          <li>2020 年本科毕业于清华大学</li>
+          <li>美国理工学院研修期间继续深造</li>
+          <li>拟回国进入中国科学技术大学攻读博士</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>比赛经历</h3>
+        <div class="timeline">
+          <div class="item">
+            <strong>2022.09</strong> 全国大学生数学建模竞赛 &nbsp;|&nbsp; 国家一等奖
+          </div>
+          <div class="item">
+            <strong>2023.11</strong> ACM-ICPC 亚洲区域赛（西安站） &nbsp;|&nbsp; 金牌
+          </div>
+          <div class="item">
+            <strong>2024.06</strong> “挑战杯”中国大学生创业计划竞赛 &nbsp;|&nbsp; 国家级金奖
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>兴趣爱好</h3>
+        <p>平日喜欢阅读学术研究论文，乐于探索新知；热爱算法竞赛、开源技术，也享受篮球与旅行带来的活力。</p>
+      </section>
+
+      <section>
+        <h3>自我评价</h3>
+        <p>自认为不算特别出众，但始终保持敢于思考与探索的态度，脚踏实地，追求精进。</p>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    © 2025 悟宝孙 · 不忘初心，砥砺前行
+  </footer>
+</body>
+</html>
